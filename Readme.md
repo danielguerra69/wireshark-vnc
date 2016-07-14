@@ -20,7 +20,7 @@ Right click opens a menu to start wireshark or xterm.
 Everything runs under user wireshark, the user
 has sudo rights.
 
-Password for user wireshark = wireshark !
+Password for user wireshark = wireshark
 
 ```bash
 sudo su -
