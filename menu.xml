@@ -12,7 +12,7 @@
   <menu id="client-list-menu" />
   <separator />
   <item label="Wireshark">
-    <action name="Execute"><command>wireshark</command></action>
+    <action name="Execute"><command>wireshark-gtk</command></action>
   </item>
   <item label="xterm">
     <action name="Execute"><execute>xterm</execute></action>

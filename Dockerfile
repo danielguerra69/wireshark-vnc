@@ -11,6 +11,7 @@ RUN chown wireshark:wireshark /etc/supervisor/conf.d/supervisord.conf
 ADD menu.xml /etc/xdg/openbox/menu.xml
 RUN chown wireshark:wireshark /etc/xdg/openbox/menu.xml
 RUN sed -i "s/NLIMC/NLM/g" /etc/xdg/openbox/rc.xml
+RUN setcap cap_net_raw,cap_net_admin=eip /usr/local/bin/dumpcap
 USER wireshark
 WORKDIR /home/wireshark
 ENV DISPLAY :1

@@ -6,7 +6,7 @@
 Start wireshark vnc server
 
 ```bash
-docker run --name wireshark -d -p 5900:5900 danielguerra/wireshark-vnc
+docker run --name wireshark -v /Users/pcap:/home/wireshark/pcap -d -p 5900:5900 danielguerra/wireshark-vnc
 ```
 & check
 ```bash
