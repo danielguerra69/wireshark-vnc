@@ -14,6 +14,7 @@ RUN sed -i "s/NLIMC/NLM/g" /etc/xdg/openbox/rc.xml
 RUN setcap cap_net_raw,cap_net_admin=eip /usr/local/bin/dumpcap
 USER wireshark
 WORKDIR /home/wireshark
+RUN git clone --recursive https://github.com/kanaka/noVNC.git
 ENV DISPLAY :1
 EXPOSE 5900 6080
 CMD ["/usr/bin/supervisord","-c","/etc/supervisor/conf.d/supervisord.conf"]
